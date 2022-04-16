@@ -1,3 +1,7 @@
+/**
+ * Helper class for question 9.12
+ */
+
 import java.util.Scanner;
 
 public class Algebra {

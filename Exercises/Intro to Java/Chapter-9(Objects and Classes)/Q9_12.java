@@ -1,10 +1,23 @@
+/**
+ * Suppose two line segments intersect. The two end points for the first line segment are (x1, y1) 
+ * and (x2, y2) and for the second line  segment are (x3, y3) and (x4, y4). Write a program that prompts 
+ * the user to enter these four endpoints and displays the intersecting point. As discussed in Programming Exercise 3.25, 
+ * the intersecting point can be found by solving a linear equation. Use the LinearEquation class in Programming Exercise 9.11
+ * to solve this equation. See Programming Exercise 3.25 for sample runs.
+ */
+
+ /**
+  * Answer
+  * See also Algbebra.java file.
+  */
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Point {
+public class Q9_12 {
     private double x1, y1, x2, y2;
     
-    public Point(double x1, double y1, double x2, double y2) {
+    public Q9_12(double x1, double y1, double x2, double y2) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
@@ -24,8 +37,8 @@ public class Point {
             
         }
 
-        Point p1 = new Point(arr[0][0], arr[0][1], arr[1][0], arr[1][1]);
-        Point p2 = new Point(arr[2][0], arr[2][1], arr[3][0], arr[3][1]);
+        Q9_12 p1 = new Q9_12(arr[0][0], arr[0][1], arr[1][0], arr[1][1]);
+        Q9_12 p2 = new Q9_12(arr[2][0], arr[2][1], arr[3][0], arr[3][1]);
 
         double a = p1.y1 - p1.y2;
         double b = -1 * (p1.x1 - p1.x2);

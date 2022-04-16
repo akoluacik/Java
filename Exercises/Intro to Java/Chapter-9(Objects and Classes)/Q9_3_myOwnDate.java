@@ -1,3 +1,6 @@
+/**
+ * Helper class for Q9.3
+ */
 import java.util.Date;
 public class Q9_3_myOwnDate {
     private Date date;

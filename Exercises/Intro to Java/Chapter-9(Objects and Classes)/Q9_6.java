@@ -1,3 +1,14 @@
+/**
+ *  (Use the Random class) Write a program that creates a Random object with seed 
+ * 1000 and displays the first 50 random integers between 0 and 100 using the 
+ * nextInt(100) method.
+ */
+
+ /**
+  * ANSWER
+  * See also StopWatch.java file.
+  */
+
 import java.util.Random;
 
 public class Q9_6 {

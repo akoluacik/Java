@@ -1,3 +1,7 @@
+/**
+ * Help class for Q9.12
+ */
+
 import java.util.Date;
 
 public class StopWatch {
