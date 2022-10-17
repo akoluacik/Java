@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+	<session-factory>
+		<!-- JDBC Database connection settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/world?useSSL=false&amp;serverTimezone=UTC</property>
+		<!-- Write your MySql username here -->
+		<property name="hibernate.connection.username">root</property>
+		<!-- write your password here -->
+		<property name="hibernate.connection.password">admin</property>
+		<!-- <property name="hbm2ddl.auto">update</property> -->
+		<!-- JDBC connection pool settings ... using built-in test pool -->
+		<property name="hibernate.connection.pool_size">1</property>
+		<!-- Set the current session context -->
+		<property name="hibernate.current_session_context_class">thread</property>
+		<!-- Echo the SQL to stdout -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- Select our SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+	</session-factory>
+	 
+</hibernate-configuration>

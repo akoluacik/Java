@@ -1,0 +1,44 @@
+package com.hibernatedemo;
+
+import org.hibernate.cfg.Configuration;
+import org.hibernate.SessionFactory;
+
+import java.util.List;
+
+import org.hibernate.Session;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Sessions are useful when we execute multiple queries back to back\n"
+			+ "And if one of them is errornous, the previous updates are withdrawn!");
+		
+		SessionFactory factory = new Configuration()
+				.configure("hibernate.cfg.xml")
+				.addAnnotatedClass(City.class)
+				.buildSessionFactory();
+		
+		Session session = factory.getCurrentSession();
+		
+		try {
+			session.beginTransaction();
+			// Execute queries
+			// Typecast and getResultList is needed because createQuery return a query
+			List<City> cities = session.createQuery("from City").getResultList(); // equivalent to SELECT * FROM city
+			session.getTransaction().commit(); // update the database
+			for (City city : cities) {
+				System.out.println(city.getId());
+			}
+			
+			session.flush();
+			//factory.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Normally we would see session.rollBack if any error occurs, but hibernate can do this automatically so we do not need catch block");
+		} finally {
+			factory.close();
+			session.close();
+		}
+		System.out.println("end of the code");
+	}
+}
