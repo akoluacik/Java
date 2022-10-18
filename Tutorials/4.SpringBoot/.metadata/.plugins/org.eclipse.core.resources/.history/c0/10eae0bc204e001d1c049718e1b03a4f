@@ -1,0 +1,5 @@
+package com.akol.hibernateandJpa.Entities;
+
+public class City {
+
+}

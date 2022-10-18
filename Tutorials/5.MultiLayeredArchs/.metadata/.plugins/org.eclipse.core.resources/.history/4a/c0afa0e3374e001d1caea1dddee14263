@@ -1,0 +1,5 @@
+package com.akol.layeredarchs.DataAccess;
+
+public interface ICityDal {
+
+}

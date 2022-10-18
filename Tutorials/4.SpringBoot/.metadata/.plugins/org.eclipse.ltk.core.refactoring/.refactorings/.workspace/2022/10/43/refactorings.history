@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springBootIntro&apos; to &apos;springBootIntro&amp;RestAPI&apos;" description="Rename resource &apos;springBootIntro&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/springBootIntro" name="springBootIntro&amp;RestAPI" stamp="1666009682437" updateReferences="true"/>
+</session>

@@ -1,0 +1,8 @@
+package com.akol.layeredarchs.DataAccess;
+
+public interface ICityDal {
+
+	List<City> getAll();
+	void add();
+	
+}

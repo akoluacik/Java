@@ -1,0 +1,7 @@
+package com.akol.springBootIntro.apiIntro;
+import org.springframework.*;
+
+@RestController
+public class ProductsController {
+
+}
